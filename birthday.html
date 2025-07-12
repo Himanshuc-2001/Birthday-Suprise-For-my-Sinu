@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Sinu!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffffff 0%, #ffebee 25%, #ffcdd2 50%, #ef9a9a 75%, #e57373 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 12s ease infinite;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 3rem;
+            max-width: 900px;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(244, 143, 177, 0.15), 0 0 100px rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #e91e63, #f48fb1, #f8bbd0, #fce4ec, #e91e63);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientText 3s ease infinite, float 3s ease-in-out infinite;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 30px rgba(233, 30, 99, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            color: #ad1457;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .love-message {
+            font-size: 1.3rem;
+            color: #c2185b;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .next-button {
+            padding: 1.2rem 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #e91e63, #f48fb1, #f8bbd0, #e91e63);
+            background-size: 300% 300%;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 1px;
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">Happy Birthday My Sinu!</h1>
+        <div class="subtitle">
+            Meri zindagi ka sabse pyara pal ho tum.
+        </div>
+        <div class="love-message">
+            Main tumhare paas to nahi hoon, lekin tumhe khush karne ke liye kuch khaas surprise to dunga hi na. 💖
+        </div>
+        <button class="next-button" onclick="goToNextPage()">
+            Apna surprise shuru karo! 💖
+        </button>
+    </div>
+</body>
+</html>
+<script>
+    function goToNextPage() {
+        window.location.href = "memories.html";
+    }
+</script>
